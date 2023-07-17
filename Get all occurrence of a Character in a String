@@ -1,1 +1,25 @@
-
+import java.util.HashMap;
+import java.util.Map;
+public class GetAllOccurrenceOfACharacterInAString {
+	  public static void main(String[] args) {
+	       String str = "Hello, World!";
+	        // Create a HashMap to store character occurrences
+	        Map<Character, Integer> charCountMap = new HashMap<>();
+	        // Iterate over each character in the string
+	        for (char c : str.toCharArray()) {
+	            // Check if the character already exists in the HashMap
+	            if (charCountMap.containsKey(c)) {
+	                // If it exists, increment the count by 1
+	                charCountMap.put(c, charCountMap.get(c) + 1);
+	            } else {
+	                // If it doesn't exist, add it to the HashMap with a count of 1
+	                charCountMap.put(c, 1);
+	            }
+	        }
+	          for (Map.Entry<Character, Integer> entry : charCountMap.entrySet()) {
+	           
+	            	 System.out.println("Character " 
+	            	 + entry.getKey()+" occurrenced "+entry.getValue()+" times.");
+	          }
+	        }
+	  }
