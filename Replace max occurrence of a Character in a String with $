@@ -1,7 +1,7 @@
 import java.util.HashMap;
 import java.util.Map;
 
-public class ReplaceRepeatedOccurrenceCharacterInAStringWith$ {
+public class ReplaceMaxOccurrenceCharacterInAStringWith$ {
 	  public static void main(String[] args) {
 		    String str = "Hello, world!";	       
 	        // Step 1: Create a HashMap to store character frequencies
