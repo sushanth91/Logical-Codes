@@ -1,0 +1,12 @@
+import java.lang.*;
+import java.io.*;
+import java.util.*;
+class HelloWorld {
+    public static void main(String[] args) {
+        String str = "Hello";
+        StringBuilder newStr = new StringBuilder();
+        newStr.append(str);
+        newStr.reverse();
+        System.out.println(newStr);
+    }
+}
