@@ -1,0 +1,23 @@
+import java.util.Scanner;
+public class LeapYear {
+	public static void main(String[] args) {
+		Scanner scanner = new Scanner(System.in);
+		System.out.println("Enter a number");
+		int n = scanner.nextInt();
+		int temp = 0;
+		for (int i = 2010; i < n; i++) {
+			if ((i % 400 == 0) || (i % 4 == 0 && i % 100 != 0)) {
+				System.out.println(temp);
+				temp = temp + 1;
+			}
+			if (temp == 0) {
+				System.out.println( i+" is not a leaf year");
+				System.out.println(temp);
+			} else {
+				System.out.println(i+" is a leaf year");
+				System.out.println(temp);
+				temp=0;
+			}
+		}
+	}
+}
